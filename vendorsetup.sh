@@ -1,1 +1,3 @@
-add_lunch_combo tnapi-eng
+add_lunch_combo lineage_asus_a86-userdebug
+add_lunch_combo lineage_asus_a86-user
+add_lunch_combo lineage_asus_a86-eng
