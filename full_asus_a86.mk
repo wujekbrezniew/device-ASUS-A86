@@ -14,19 +14,19 @@
 # limitations under the License.
 #
 
-# This contains the module build definitions for the hardware-specific
-# components for this device.
-#
-# As much as possible, those components should be built unconditionally,
-# with device-specific names to avoid collisions, to avoid device-specific
-# bitrot and build breakages. Building a component unconditionally does
-# *not* include it on all devices, so it is safe even with hardware-specific
-# components.
+# Sample: This is where we'd set a backup provider if we had one
+# $(call inherit-product, device/sample/products/backup_overlay.mk)
 
-ifneq ($(filter asus_a86, $(TARGET_DEVICE)),)
+# Inherit from the common Open Source product configuration
+$(call inherit-product, $(SRC_TARGET_DIR)/product/aosp_base_telephony.mk)
 
-LOCAL_PATH := $(call my-dir)
+PRODUCT_NAME := full_asus_a86
+PRODUCT_DEVICE := asus_a86
+PRODUCT_BRAND := asus
+PRODUCT_MODEL := PadFone T004
+PRODUCT_MANUFACTURER := asus
+PRODUCT_RESTRICT_VENDOR_FILES := false
 
-include $(call all-makefiles-under,$(LOCAL_PATH))
-
-endif
+#TODO:
+$(call inherit-product, device/asus/asus_a86/device.mk)
+$(call inherit-product-if-exists, vendor/asus/asus_a86/asus_a86-vendor.mk)
