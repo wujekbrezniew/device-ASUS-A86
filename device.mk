@@ -145,7 +145,7 @@ PRODUCT_COPY_FILES += \
 
 # For GPS
 PRODUCT_COPY_FILES += \
-    device/asus/asus_a86/sec_config:system/etc/sec_config
+    device/asus/asus_a86/etc/sec_config:system/etc/sec_config
 
 # NFC access control + feature files + configuration
 PRODUCT_COPY_FILES += \

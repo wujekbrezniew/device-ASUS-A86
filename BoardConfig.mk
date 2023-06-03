@@ -54,15 +54,15 @@ BOARD_HAVE_BLUETOOTH := true
 TARGET_KEYMASTER_SKIP_WAITING_FOR_QSEE := true
 
 # Wifi related defines
-WPA_SUPPLICANT_VERSION      := VER_0_8_X
-BOARD_WLAN_DEVICE           := bcmdhd
-BOARD_WPA_SUPPLICANT_DRIVER := NL80211
-BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-BOARD_HOSTAPD_DRIVER        := NL80211
-BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
-WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
-WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
-WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
+# WPA_SUPPLICANT_VERSION      := VER_0_8_X
+# BOARD_WLAN_DEVICE           := bcmdhd
+# BOARD_WPA_SUPPLICANT_DRIVER := NL80211
+# BOARD_WPA_SUPPLICANT_PRIVATE_LIB := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+# BOARD_HOSTAPD_DRIVER        := NL80211
+# BOARD_HOSTAPD_PRIVATE_LIB   := lib_driver_cmd_$(BOARD_WLAN_DEVICE)
+# WIFI_DRIVER_FW_PATH_PARAM   := "/sys/module/bcmdhd/parameters/firmware_path"
+# WIFI_DRIVER_FW_PATH_AP      := "/vendor/firmware/fw_bcmdhd_apsta.bin"
+# WIFI_DRIVER_FW_PATH_STA     := "/vendor/firmware/fw_bcmdhd.bin"
 
 #BOARD_USES_SECURE_SERVICES := true
 
@@ -109,15 +109,15 @@ TARGET_RECOVERY_FSTAB = device/asus/asus_a86/fstab.qcom
 
 TARGET_RELEASETOOLS_EXTENSIONS := device/asus/asus_a86
 
-BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
+#BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
-BOARD_SEPOLICY_DIRS += device/lge/hammerhead/sepolicy
+BOARD_SEPOLICY_DIRS += device/asus/asus_a86/sepolicy
 BOARD_SEPOLICY_M4DEFS += vensys=\(vendor\|system/vendor\)
 
-DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifest.xml
-DEVICE_MATRIX_FILE := device/lge/hammerhead/compatibility_matrix.xml
+#DEVICE_MANIFEST_FILE := device/lge/hammerhead/manifest.xml
+#DEVICE_MATRIX_FILE := device/lge/hammerhead/compatibility_matrix.xml
 
-OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
+#OVERRIDE_RS_DRIVER:= libRSDriver_adreno.so
 TARGET_FORCE_HWC_FOR_VIRTUAL_DISPLAYS := true
 TARGET_HAS_HH_VSYNC_ISSUE := true
 
