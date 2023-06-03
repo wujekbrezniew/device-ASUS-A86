@@ -21,25 +21,74 @@
 
 
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/init.hammerhead.rc:root/init.hammerhead.rc \
-    device/lge/hammerhead/init.hammerhead.usb.rc:root/init.hammerhead.usb.rc \
-    device/lge/hammerhead/fstab.hammerhead:root/fstab.hammerhead \
-    device/lge/hammerhead/ueventd.hammerhead.rc:root/ueventd.hammerhead.rc
+    device/asus/asus_a86/init.hammerhead.rc:root/init.asus.rc \
+    device/asus/asus_a86/init.hammerhead.usb.rc:root/init.asus.usb.rc \
+    device/asus/asus_a86/fstab.hammerhead:root/fstab.qcom \
+    device/asus/asus_a86/ueventd.hammerhead.rc:root/ueventd.qcom.rc
 
-# Input device files for hammerhead
+# Input device files for a86
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
-    device/lge/hammerhead/gpio-keys.kcm:system/usr/keychars/gpio-keys.kcm \
-    device/lge/hammerhead/qpnp_pon.kl:system/usr/keylayout/qpnp_pon.kl \
-    device/lge/hammerhead/qpnp_pon.kcm:system/usr/keychars/qpnp_pon.kcm \
-    device/lge/hammerhead/Button_Jack.kl:system/usr/keylayout/msm8974-taiko-mtp-snd-card_Button_Jack.kl \
-    device/lge/hammerhead/Button_Jack.kcm:system/usr/keychars/msm8974-taiko-mtp-snd-card_Button_Jack.kcm \
-    device/lge/hammerhead/hs_detect.kl:system/usr/keylayout/hs_detect.kl \
-    device/lge/hammerhead/hs_detect.kcm:system/usr/keychars/hs_detect.kcm
+    device/asus/asus_a86/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/asus/asus_a86/kl/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
+    device/asus/asus_a86/kl/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
+    device/asus/asus_a86/kl/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
+    device/asus/asus_a86/kl/AVRCP_workaround.kl:system/usr/keylayout/AVRCP_workaround \
+    device/asus/asus_a86/kl/elan-touchscreen.kl:system/usr/keylayout/elan-touchscreen.kl \
+    device/asus/asus_a86/kl/Generic.kl:system/usr/keylayout/Generic.kl \
+    device/asus/asus_a86/kl/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/asus/asus_a86/kl/i-rocks_Bluetooth_Keyboard.kl:system/usr/keylayout/i-rocks_Bluetooth_Keyboard.kl \
+    device/asus/asus_a86/kl/qwerty.kl:system/usr/keylayout/qwerty.kl \
+    device/asus/asus_a86/kl/synaptics_rmi4_i2c.kl:system/usr/keylayout/synaptics_rmi4_i2c.kl \
+    device/asus/asus_a86/kl/Vendor_0079_Product_0011.kl:system/usr/keylayout/Vendor_0079_Product_0011.kl \
+    device/asus/asus_a86/kl/Vendor_045e_Product_028e.kl:system/usr/keylayout/Vendor_045e_Product_028e.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c216.kl:system/usr/keylayout/Vendor_046d_Product_c216.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c219.kl:system/usr/keylayout/Vendor_046d_Product_c219.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c21d.kl:system/usr/keylayout/Vendor_046d_Product_c21d.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c21f.kl:system/usr/keylayout/Vendor_046d_Product_c21f.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c294.kl:system/usr/keylayout/Vendor_046d_Product_c294.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c299.kl:system/usr/keylayout/Vendor_046d_Product_c299.kl \
+    device/asus/asus_a86/kl/Vendor_046d_Product_c532.kl:system/usr/keylayout/Vendor_046d_Product_c532.kl \
+    device/asus/asus_a86/kl/Vendor_054c_Product_0268.kl:system/usr/keylayout/Vendor_054c_Product_0268.kl \
+    device/asus/asus_a86/kl/Vendor_0583_Product_2060.kl:system/usr/keylayout/Vendor_0583_Product_2060.kl \
+    device/asus/asus_a86/kl/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
+    device/asus/asus_a86/kl/Vendor_0b05_Product_17fc.kl:system/usr/keylayout/Vendor_0b05_Product_17fc.kl \
+    device/asus/asus_a86/kl/Vendor_0b05_Product_1803.kl:system/usr/keylayout/Vendor_0b05_Product_1803.kl \
+    device/asus/asus_a86/kl/Vendor_0b05_Product_4500.kl:system/usr/keylayout/ Vendor_0b05_Product_4500.kl \
+    device/asus/asus_a86/kl/Vendor_0b05_Product_5000.kl:system/usr/keylayout/Vendor_0b05_Product_5000.kl \
+    device/asus/asus_a86/kl/Vendor_1038_Product_1412.kl:system/usr/keylayout/Vendor_1038_Product_1412.kl \
+    device/asus/asus_a86/kl/Vendor_12bd_Product_d015.kl:system/usr/keylayout/Vendor_12bd_Product_d015.kl \
+    device/asus/asus_a86/kl/Vendor_1689_Product_fd00.kl:system/usr/keylayout/Vendor_1689_Product_fd00.kl \
+    device/asus/asus_a86/kl/Vendor_1689_Product_fd01.kl:system/usr/keylayout/Vendor_1689_Product_fd01.kl \
+    device/asus/asus_a86/kl/Vendor_1689_Product_fe00.kl:system/usr/keylayout/Vendor_1689_Product_fe00.kl \
+    device/asus/asus_a86/kl/Vendor_18d1_Product_2c40.kl:system/usr/keylayout/Vendor_18d1_Product_2c40.kl \
+    device/asus/asus_a86/kl/Vendor_1949_Product_0401.kl:system/usr/keylayout/Vendor_1949_Product_0401.kl \
+    device/asus/asus_a86/kl/Vendor_1bad_Product_f016.kl:system/usr/keylayout/Vendor_1bad_Product_f016.kl \
+    device/asus/asus_a86/kl/Vendor_1bad_Product_f023.kl:system/usr/keylayout/Vendor_1bad_Product_f023.kl \
+    device/asus/asus_a86/kl/Vendor_1bad_Product_f027.kl:system/usr/keylayout/Vendor_1bad_Product_f027.kl \
+    device/asus/asus_a86/kl/Vendor_1bad_Product_f036.kl:system/usr/keylayout/Vendor_1bad_Product_f036.kl \
+    device/asus/asus_a86/kl/Vendor_1d79_Product_0009.kl:system/usr/keylayout/Vendor_1d79_Product_0009.kl \
+    device/asus/asus_a86/kl/Vendor_22b8_Product_093d.kl:system/usr/keylayout/Vendor_22b8_Product_093d.kl \
+    device/asus/asus_a86/kl/Vendor_2378_Product_1008.kl:system/usr/keylayout/Vendor_2378_Product_1008.kl \
+    device/asus/asus_a86/kl/Vendor_2378_Product_100a.kl:system/usr/keylayout/Vendor_2378_Product_100a.kl \
+    device/asus/asus_a86/kcm/elan-touchscreen.kcm:system/usr/keychars/elan-touchscreen.kcm \
+    device/asus/asus_a86/kcm/Generic.kcm:system/usr/keylayout/Generic.kcm \
+    device/asus/asus_a86/kcm/qwerty2.kcm:system/usr/keychars/qwerty2.kcm \
+    device/asus/asus_a86/kcm/qwerty.kcm:system/usr/keylayout/qwerty.kcm \
+    device/asus/asus_a86/kcm/Virtual.kcm:system/usr/keychars/Virtual.kcm
 
 # Prebuilt input device calibration files
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/touch_dev.idc:system/usr/idc/touch_dev.idc
+    device/asus/asus_a86/idc/asus_dds_sis_touch.idc:system/usr/idc/asus_dds_sis_touch.idc \
+    device/asus/asus_a86/idc/ASUS_TransKeyboard.idc:system/usr/idc/ASUS_TransKeyboard.idc \
+    device/asus/asus_a86/idc/elan-touchscreen.idc:system/usr/idc/elan-touchscreen.idc \
+    device/asus/asus_a86/idc/qwerty2.idc:system/usr/idc/qwerty2.idc \
+    device/asus/asus_a86/idc/qwerty.idc:system/usr/idc/qwerty.idc \
+    device/asus/asus_a86/idc/usf_tsc_ext.idc:system/usr/idc/usf_tsc_ext.idc \
+    device/asus/asus_a86/idc/usf_tsc.idc:system/usr/idc/usf_tsc.idc \
+    device/asus/asus_a86/idc/usf_tsc_ptr.idc:system/usr/idc/usf_tsc_ptr.idc \
+    device/asus/asus_a86/idc/Vendor_0b05_Product_17fc.idc:system/usr/idc/Vendor_0b05_Product_17fc.idc \
+    device/asus/asus_a86/idc/Vendor_0b05_Product_1803.idc:system/usr/idc/Vendor_0b05_Product_1803.idc \
+    device/asus/asus_a86/idc/Vendor_0b05_Product_5000.idc:system/usr/idc/Vendor_0b05_Product_5000.idc 
 
 PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/a2dp_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/a2dp_audio_policy_configuration.xml \
@@ -47,23 +96,26 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/usb_audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/usb_audio_policy_configuration.xml \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
-    device/lge/hammerhead/audio_platform_info.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_platform_info.xml \
-    device/lge/hammerhead/audio_policy_configuration.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_configuration.xml \
-    device/lge/hammerhead/mixer_paths.xml:system/etc/mixer_paths.xml
-
+    device/asus/asus_a86/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
+    device/asus/asus_a86/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf 
+    
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
     frameworks/av/media/libstagefright/data/media_codecs_google_telephony.xml:system/etc/media_codecs_google_telephony.xml \
-    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml \
-    device/lge/hammerhead/media_codecs.xml:system/etc/media_codecs.xml \
-    device/lge/hammerhead/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
-    device/lge/hammerhead/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
+    frameworks/av/media/libstagefright/data/media_codecs_google_video.xml:system/etc/media_codecs_google_video.xml 
+
+    #device/asus/asus_a86/media_codecs.xml:system/etc/media_codecs.xml \
+    device/asus/asus_a86/media_codecs_performance.xml:system/etc/media_codecs_performance.xml \
+    device/asus/asus_a86/media_profiles_V1_0.xml:$(TARGET_COPY_OUT_VENDOR)/etc/media_profiles_V1_0.xml
 
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/bcmdhd.cal:system/etc/wifi/bcmdhd.cal
+    device/asus/asus_a86/etc/wifi/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
+    device/asus/asus_a86/etc/wifi/p2p_supplicant.conf:system/etc/wifi/p2p_supplicant.conf \
+    device/asus/asus_a86/etc/wifi/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
+    device/asus/asus_a86/etc/wifi/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf 
 
-PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/bluetooth/BCM4339_003.001.009.0079.0339.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335c0.hcd
+#PRODUCT_COPY_FILES += \
+    device/asus/asus_a86/bluetooth/BCM4339_003.001.009.0079.0339.hcd:$(TARGET_COPY_OUT_VENDOR)/firmware/bcm4335c0.hcd
 
 # These are the hardware-specific features
 PRODUCT_COPY_FILES += \
@@ -93,29 +145,29 @@ PRODUCT_COPY_FILES += \
 
 # For GPS
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/sec_config:system/etc/sec_config
+    device/asus/asus_a86/sec_config:system/etc/sec_config
 
 # NFC access control + feature files + configuration
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:system/etc/permissions/android.hardware.nfc.xml \
-    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml \
-    device/lge/hammerhead/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
-    device/lge/hammerhead/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
+    frameworks/native/data/etc/android.hardware.nfc.hce.xml:system/etc/permissions/android.hardware.nfc.hce.xml 
+    #device/asus/asus_a86/nfc/libnfc-nci.conf:$(TARGET_COPY_OUT_SYSTEM)/etc/libnfc-nci.conf \
+    device/asus/asus_a86/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
 
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
+    device/asus/asus_a86/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
 
 # Privapp Whitelist
-PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/permissions/privapp-permissions-hammerhead.xml:system/etc/permissions/privapp-permissions-hammerhead.xml
+#PRODUCT_COPY_FILES += \
+    device/asus/asus_a86/permissions/privapp-permissions-hammerhead.xml:system/etc/permissions/privapp-permissions-hammerhead.xml
 
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := xxhdpi
 
-PRODUCT_CHARACTERISTICS := nosdcard
+PRODUCT_CHARACTERISTICS := sdcard
 
-DEVICE_PACKAGE_OVERLAYS := \
-    device/lge/hammerhead/overlay
+#DEVICE_PACKAGE_OVERLAYS := \
+    device/asus/asus_a86/overlay
 
 PRODUCT_PACKAGES := \
     android.hardware.wifi@1.0-service \
@@ -176,8 +228,8 @@ PRODUCT_PACKAGES += \
     libqcomvoiceprocessingdescriptors \
     libqcompostprocbundle
 
-PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
+#PRODUCT_COPY_FILES += \
+    device/asus/asus_a86/audio_effects.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.xml
 
 
 # Camera
@@ -200,7 +252,7 @@ PRODUCT_PACKAGES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-    device/lge/hammerhead/gps.conf:system/etc/gps.conf
+    device/asus/asus_a86/gps.conf:system/etc/gps.conf
 
 # GPS
 PRODUCT_PACKAGES += \
@@ -394,7 +446,7 @@ PRODUCT_PROPERTY_OVERRIDES += \
 $(call inherit-product, frameworks/native/build/phone-xhdpi-2048-dalvik-heap.mk)
 
 $(call inherit-product-if-exists, vendor/qcom/gpu/msm8x74/msm8x74-gpu-vendor.mk)
-$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
+#$(call inherit-product-if-exists, hardware/broadcom/wlan/bcmdhd/firmware/bcm4339/device-bcm.mk)
 
 # Vendor security patch level
 PRODUCT_PROPERTY_OVERRIDES += \

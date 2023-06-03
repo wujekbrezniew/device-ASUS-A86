@@ -114,11 +114,11 @@ TARGET_RELEASETOOLS_EXTENSIONS := device/asus/asus_a86
 
 #BOARD_HAL_STATIC_LIBRARIES := libdumpstate.hammerhead
 
-BOARD_SEPOLICY_DIRS += \
+#BOARD_SEPOLICY_DIRS += \
        device/lge/hammerhead/sepolicy
 
 # The list below is order dependent
-BOARD_SEPOLICY_UNION += \
+#BOARD_SEPOLICY_UNION += \
        app.te \
        bluetooth_loader.te \
        bridge.te \
