@@ -21,14 +21,41 @@
 
 
 PRODUCT_COPY_FILES += \
-    device/asus/asus_a86/init.hammerhead.rc:root/init.asus.rc \
-    device/asus/asus_a86/init.hammerhead.usb.rc:root/init.asus.usb.rc \
-    device/asus/asus_a86/fstab.hammerhead:root/fstab.qcom \
-    device/asus/asus_a86/ueventd.hammerhead.rc:root/ueventd.qcom.rc
+    device/asus/asus_a86/fstab.qcom:root/fstab.qcom \
+    device/asus/asus_a86/root/init:root/init \
+    device/asus/asus_a86/root/init.asus.debugtool.rc:root/init.asus.debugtool.rc \
+    device/asus/asus_a86/root/init.asus.rc:root/init.asus.rc \
+    device/asus/asus_a86/root/init.asus.thermald.rc:root/init.asus.thermald.rc \
+    device/asus/asus_a86/root/init.asus.usb.boot.sh:root/init.asus.usb.boot.sh \
+    device/asus/asus_a86/root/init.asus.usb.diag.sh:root/init.asus.usb.diag.sh \
+    device/asus/asus_a86/root/init.asus.usb.rc:root/init.asus.usb.rc \
+    device/asus/asus_a86/root/init.class_main.sh:root/init.class_main.sh \
+    device/asus/asus_a86/root/init.environ.rc:root/init.environ.rc \
+    device/asus/asus_a86/root/init.mdm.sh:root/init.mdm.sh \
+    device/asus/asus_a86/root/init.qcom.class_core.sh:root/init.qcom.class_core.sh \
+    device/asus/asus_a86/root/init.qcom.early_boot.sh:root/init.qcom.early_boot.sh \
+    device/asus/asus_a86/root/init.qcom.factory.sh:root/init.qcom.factory.sh \
+    device/asus/asus_a86/root/init.qcom.rc:root/init.qcom.rc \
+    device/asus/asus_a86/root/init.qcom.sh:root/init.qcom.sh \
+    device/asus/asus_a86/root/init.qcom.ssr.sh:root/init.qcom.ssr.sh \
+    device/asus/asus_a86/root/init.qcom.syspart_fixup.sh:root/init.qcom.syspart_fixup.sh \
+    device/asus/asus_a86/root/init.qcom.usb.rc:root/init.qcom.usb.rc \
+    device/asus/asus_a86/root/init.qcom.usb.sh:root/init.qcom.usb.sh \
+    device/asus/asus_a86/root/init.rc:root/init.rc \
+    device/asus/asus_a86/root/init.target.rc:root/init.target.rc \
+    device/asus/asus_a86/root/init.trace.rc:root/init.trace.rc \
+    device/asus/asus_a86/root/init.usb.rc:root/init.usb.rc \
+    device/asus/asus_a86/root/init.zygote32.rc:root/init.zygote32.rc \
+    device/asus/asus_a86/root/property_contexts:root/property_contexts \
+    device/asus/asus_a86/root/seapp_contexts:root/seapp_contexts \
+    device/asus/asus_a86/root/selinux_version:root/selinux_version \
+    device/asus/asus_a86/root/service_contexts:root/service_contexts \
+    device/asus/asus_a86/root/ueventd.qcom.rc:root/ueventd.qcom.rc \
+    device/asus/asus_a86/root/ueventd.rc:root/ueventd.rc \
 
 # Input device files for a86
 PRODUCT_COPY_FILES += \
-    device/asus/asus_a86/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
+    device/asus/asus_a86/kl/gpio-keys.kl:system/usr/keylayout/gpio-keys.kl \
     device/asus/asus_a86/kl/ASUS_TransKeyboard.kl:system/usr/keylayout/ASUS_TransKeyboard.kl \
     device/asus/asus_a86/kl/atmel_mxt_ts.kl:system/usr/keylayout/atmel_mxt_ts.kl \
     device/asus/asus_a86/kl/AVRCP.kl:system/usr/keylayout/AVRCP.kl \
@@ -53,7 +80,6 @@ PRODUCT_COPY_FILES += \
     device/asus/asus_a86/kl/Vendor_05ac_Product_0239.kl:system/usr/keylayout/Vendor_05ac_Product_0239.kl \
     device/asus/asus_a86/kl/Vendor_0b05_Product_17fc.kl:system/usr/keylayout/Vendor_0b05_Product_17fc.kl \
     device/asus/asus_a86/kl/Vendor_0b05_Product_1803.kl:system/usr/keylayout/Vendor_0b05_Product_1803.kl \
-    device/asus/asus_a86/kl/Vendor_0b05_Product_4500.kl:system/usr/keylayout/ Vendor_0b05_Product_4500.kl \
     device/asus/asus_a86/kl/Vendor_0b05_Product_5000.kl:system/usr/keylayout/Vendor_0b05_Product_5000.kl \
     device/asus/asus_a86/kl/Vendor_1038_Product_1412.kl:system/usr/keylayout/Vendor_1038_Product_1412.kl \
     device/asus/asus_a86/kl/Vendor_12bd_Product_d015.kl:system/usr/keylayout/Vendor_12bd_Product_d015.kl \
@@ -97,7 +123,7 @@ PRODUCT_COPY_FILES += \
     frameworks/av/services/audiopolicy/config/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     frameworks/av/services/audiopolicy/config/audio_policy_volumes.xml:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy_volumes.xml \
     device/asus/asus_a86/etc/audio_effects.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_effects.conf \
-    device/asus/asus_a86/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf 
+    device/asus/asus_a86/conf/audio_policy.conf:$(TARGET_COPY_OUT_VENDOR)/etc/audio_policy.conf 
     
 PRODUCT_COPY_FILES += \
     frameworks/av/media/libstagefright/data/media_codecs_google_audio.xml:system/etc/media_codecs_google_audio.xml \
@@ -155,7 +181,7 @@ PRODUCT_COPY_FILES += \
     device/asus/asus_a86/nfc/libnfc-brcm-20791b05.conf:system/etc/libnfc-brcm-20791b05.conf
 
 PRODUCT_COPY_FILES += \
-    device/asus/asus_a86/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
+    device/asus/asus_a86/conf/thermal-engine-8974.conf:system/etc/thermal-engine-8974.conf
 
 # Privapp Whitelist
 #PRODUCT_COPY_FILES += \
@@ -252,7 +278,7 @@ PRODUCT_PACKAGES += \
 
 # GPS configuration
 PRODUCT_COPY_FILES += \
-    device/asus/asus_a86/gps.conf:system/etc/gps.conf
+    device/asus/asus_a86/conf/gps.conf:system/etc/gps.conf
 
 # GPS
 PRODUCT_PACKAGES += \
