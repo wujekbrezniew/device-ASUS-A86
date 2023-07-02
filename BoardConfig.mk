@@ -104,7 +104,7 @@ BOARD_CACHEIMAGE_FILE_SYSTEM_TYPE := ext4
 BOARD_FLASH_BLOCK_SIZE := 131072
 
 # Define kernel config for inline building
-TARGET_KERNEL_CONFIG := a86-userdebug_defconfig
+TARGET_KERNEL_CONFIG := a86-devel_defconfig
 TARGET_KERNEL_SOURCE := kernel/asus/asus_a86
 
 BOARD_CHARGER_ENABLE_SUSPEND := true
